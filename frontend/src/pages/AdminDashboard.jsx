@@ -338,7 +338,7 @@ const AdminDashboard = () => {
 
       {/* Modals */}
       {showModal === 'user' && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/30 backdrop-blur-md bg-opacity-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg p-6 max-w-md w-full">
             <h3 className="text-lg font-semibold mb-4">Add New User</h3>
             <form onSubmit={handleCreateUser} className="space-y-3">
@@ -362,7 +362,7 @@ const AdminDashboard = () => {
       )}
 
       {showModal === 'vehicle' && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/30 backdrop-blur-md flex items-center justify-center p-4">
           <div className="bg-white rounded-lg p-6 max-w-md w-full">
             <h3 className="text-lg font-semibold mb-4">Add New Vehicle</h3>
             <form onSubmit={handleCreateVehicle} className="space-y-3">
@@ -387,7 +387,7 @@ const AdminDashboard = () => {
       )}
 
       {showModal === 'service' && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/30 backdrop-blur-md bg-opacity-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg p-6 max-w-md w-full">
             <h3 className="text-lg font-semibold mb-4">Schedule Service</h3>
             <form onSubmit={handleCreateService} className="space-y-3">
